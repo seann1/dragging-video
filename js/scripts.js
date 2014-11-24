@@ -6,23 +6,53 @@ function init() {
 
   });
 
-  $('.destination1, .destination2, .destination3, .destination4').droppable({
-  	drop: handleDropEvent
+  $('.destination1').droppable({
+  	drop: handleDropEvent1
+
+  });
+
+  $('.destination2').droppable({
+  	drop: handleDropEvent2
+
+  });
+
+  $('.destination3').droppable({
+  	drop: handleDropEvent3
+
+  });
+
+  $('.destination4').droppable({
+  	drop: handleDropEvent4
 
   });
 }
 
-function handleDropEvent( event, ui ) {
+var answerArray = [];
+
+function handleDropEvent1( event, ui ) {
   var draggable = ui.draggable;
-  alert( 'The square with ID "' + draggable.attr('id') + '" was dropped onto me!' );
+  if (draggable.attr('id') === "square1") {
+  	answerArray.push("true");
+  }
 };
 
-function check() {
+function handleDropEvent2( event, ui ) {
+  var draggable = ui.draggable;
+  if (draggable.attr('id') === "square2") {
+  	answerArray.push("true");
+  }
+};
 
-if ($('.destination1').find('#square1')) {
-	alert("Hello");
-}
+function handleDropEvent3( event, ui ) {
+  var draggable = ui.draggable;
+  if (draggable.attr('id') === "square3") {
+  	answerArray.push("true");
+  }
+};
 
-}
-
-check();
+function handleDropEvent4( event, ui ) {
+  var draggable = ui.draggable;
+  if (draggable.attr('id') === "square4") {
+  	answerArray.push("true");
+  }
+};
