@@ -68,12 +68,58 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 8, ../sass/screen.scss */
-.square {
+.square1 {
   height: 100px;
   width: 100px;
-  background-color: #ffe100;
+  background-color: white;
   margin: 10px;
   border-width: 5px;
   border-style: solid;
   border-color: black;
+  z-index: 1;
+}
+
+/* line 19, ../sass/screen.scss */
+.square2 {
+  height: 100px;
+  width: 100px;
+  background-color: #c9c9c9;
+  margin: 10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black;
+  z-index: 1;
+}
+
+/* line 30, ../sass/screen.scss */
+.square3 {
+  height: 100px;
+  width: 100px;
+  background-color: #6d6d6d;
+  margin: 10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black;
+  z-index: 1;
+}
+
+/* line 41, ../sass/screen.scss */
+.square4 {
+  height: 100px;
+  width: 100px;
+  background-color: black;
+  margin: 10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black;
+  z-index: 1;
+}
+
+/* line 53, ../sass/screen.scss */
+.destination {
+  height: 110px;
+  width: 110px;
+  background-color: #00e077;
+  margin: 10px;
+  z-index: 0;
 }
