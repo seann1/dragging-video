@@ -7,8 +7,7 @@ function init() {
   });
 
   $('.destination1, .destination2, .destination3, .destination4').droppable({
-  	drop: handleDropEvent,
-  	drop: dropPush
+  	drop: handleDropEvent
 
   });
 }
@@ -18,9 +17,12 @@ function handleDropEvent( event, ui ) {
   alert( 'The square with ID "' + draggable.attr('id') + '" was dropped onto me!' );
 };
 
-var orderArray = [];
+function check() {
 
-function dropPush( event, ui ) {
-	var draggable = ui.draggable;
-	orderArray.push(draggable.attr('id'));
+if ($('.destination1').find('#square1')) {
+	alert("Hello");
 }
+
+}
+
+check();
