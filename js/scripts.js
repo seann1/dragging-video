@@ -56,3 +56,7 @@ function handleDropEvent4( event, ui ) {
   	answerArray.push("true");
   }
 };
+
+if (answerArray = ["true", "true", "true", "true"]) {
+  $('#videoId')[0].play();
+}
