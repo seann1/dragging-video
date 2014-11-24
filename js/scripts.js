@@ -57,6 +57,11 @@ function handleDropEvent4( event, ui ) {
   }
 };
 
-if (answerArray = ["true", "true", "true", "true"]) {
-  $('#videoId')[0].play();
+
+function playIfTrue() {
+if (answerArray === ["true", "true", "true", "true"]) {
+  $('#video').attr({'autoplay':'true'});
 }
+}
+
+playIfTrue();
